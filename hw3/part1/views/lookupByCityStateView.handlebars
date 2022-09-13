@@ -1,0 +1,16 @@
+<b>Results for {{city}},{{state}}</b>
+<br>
+
+<table>
+    <tr>
+        <th>ZipCode</th>
+        <th>Population</th>
+    </tr>
+    {{#each pops}}
+        <tr>
+            <td><a href="http://localhost:3000/zip/{{this.zip}}">{{this.zip}}</a></td>
+            <td style="text-align: right">{{this.pop}}</td>
+        </tr>
+    {{/each}}
+
+</table>
