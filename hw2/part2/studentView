@@ -1,0 +1,18 @@
+<b>Student Info for {{student.id}},({{student.name})</b>
+<p>
+
+<table border =1>
+    <tr>
+        <th>Course</th>
+        <th>Name</th>
+        <th>Grades</th>
+    </tr>
+{{#index_of courses}}
+        <tr>
+            <td>{{this.courseId}}</a></td>
+            <td>{{this.courName}}</td>
+            <td>{{this.Grades}}</td>
+        </tr>
+{{/index_of}}
+
+</table>

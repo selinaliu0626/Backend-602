@@ -1,0 +1,18 @@
+<b>Zip Code {{zip}}</b>
+<br>
+
+<p>City: {{detail.city}}, State: {{detail.state}}, Population: {{detail.pop}}</p>
+<br>
+
+<form method="post" action="/city" class="inline">
+    <input type = "hidden" name="city" value="{{detail.city}}">
+    <input type="hidden" name="state" value="{{detail.state}}">
+    <button type="submit" style="background: none;
+    border: none;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: serif;">Click here for all Zip Codes for {{detail.city}},{{detail.state}}</button>
+</form>
+
